@@ -23,12 +23,6 @@
   }
 }
 
-.project-section:focus .project-box_animation,
-.project-section:hover .project-box_animation {
-  transform: translateY(-100%);
-  transition: $hovertransition;
-}
-
 .project-box {
   overflow: hidden;
   position: relative;
@@ -47,23 +41,29 @@
     margin-bottom: 20px;
     margin-left: 24px;
   }
+}
 
-  &_animation {
-    background: rgba(33, 150, 243, 0.9);
-    position: absolute;
-    left: inherit;
-    top: inherit;
-    width: 370px;
-    height: 294px;
-    transform: translateY(100%);
-    @include flexVar(flex, none, center);
-  }
+.project-box_animation {
+  background: rgba(33, 150, 243, 0.9);
+  position: absolute;
+  left: inherit;
+  top: inherit;
+  width: 370px;
+  height: 294px;
+  transform: translateY(100%);
+  @include flexVar(flex, none, center);
+}
 
-  &_animation p {
-    @include fontVar(normal, 400, 18px, 156%, 0.03em);
-    color: getColor("text-on-darkparts");
-    width: 301px;
-    height: 196px;
-    margin-left: 24px;
-  }
+.project-box_animation p {
+  @include fontVar(normal, 400, 18px, 156%, 0.03em);
+  color: getColor("text-on-darkparts");
+  width: 301px;
+  height: 196px;
+  margin-left: 24px;
+}
+
+.project-section:focus .project-box_animation,
+.project-section:hover .project-box_animation {
+  transform: translateY(-100%);
+  transition: $hovertransition;
 }

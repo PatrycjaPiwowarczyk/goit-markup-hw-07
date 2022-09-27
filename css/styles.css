@@ -1031,7 +1031,7 @@ textarea {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  border: 3px solid var(--brand-black);
+  border: 3px solid;
   border-radius: 1.68px;
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }

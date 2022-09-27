@@ -8,7 +8,7 @@
 .background-header {
     @include flexVar(flex, center, none);
     background-color: getColor("bcgnd-primary");
-    border: 1px solid getColor("bcgnd-projectsbox");
+    border: 1px solid getColor("border-header");
 }
 
 .header_text {
