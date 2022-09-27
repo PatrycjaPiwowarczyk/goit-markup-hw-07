@@ -65,5 +65,6 @@
 .project-section:focus .project-box_animation,
 .project-section:hover .project-box_animation {
   transform: translateY(-100%);
+  transition-duration: 400ms;
   transition: $hovertransition;
 }

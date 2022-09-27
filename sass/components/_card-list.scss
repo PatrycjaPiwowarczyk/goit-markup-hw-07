@@ -16,14 +16,14 @@
 }
 
 .card_photo-description {
-    @include fontVar(normal, 500, 16px, 100%, 0.03em);
+  @include fontVar(normal, 500, 16px, 100%, 0.03em);
   text-align: center;
   vertical-align: Top;
   margin-top: 30px;
 }
 
 .card_additional-photo-description {
-    @include fontVar(normal, 400, 16px, 100%, 0.03em);
+  @include fontVar(normal, 400, 16px, 100%, 0.03em);
   color: var(--light-gray);
   margin-top: 10px;
   @include flexVar(flex, center, none);
@@ -50,7 +50,7 @@
     border-radius: 50%;
     background-color: getColor("text-hover");
     border: getColor("text-hover");
-    fill: getColor("svg-fill-hover");
+    fill: getColor("svg-fill-light");
     cursor: pointer;
     transition: $hovertransition;
   }

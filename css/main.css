@@ -287,7 +287,7 @@ body {
   margin-left: 70px;
 }
 
-.social-icons {
+.social-box .social-icons {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -297,7 +297,7 @@ body {
   gap: 10px;
 }
 
-.social-icon {
+.social-box .social-icon {
   height: 44px;
   width: 44px;
   border-radius: 0px;
@@ -305,12 +305,12 @@ body {
   background: rgba(255, 255, 255, 0.1);
   fill: #ffffff;
 }
-.social-icon:hover, .social-icon:focus {
+.social-box .social-icon:hover, .social-box .social-icon:focus {
   height: 44px;
   width: 44px;
   border-radius: 50px;
   background-color: #2196f3;
-  fill: #2196f3;
+  fill: #ffffff;
   cursor: pointer;
   -webkit-transition: "250ms cubic-bezier(0.4, 0, 0.2, 1)";
   transition: "250ms cubic-bezier(0.4, 0, 0.2, 1)";
@@ -772,7 +772,7 @@ label .signup-form_email:focus {
   border-radius: 50%;
   background-color: #2196f3;
   border: #2196f3;
-  fill: #2196f3;
+  fill: #ffffff;
   cursor: pointer;
   -webkit-transition: "250ms cubic-bezier(0.4, 0, 0.2, 1)";
   transition: "250ms cubic-bezier(0.4, 0, 0.2, 1)";
@@ -998,6 +998,8 @@ label .signup-form_email:focus {
 .project-section:hover .project-box_animation {
   -webkit-transform: translateY(-100%);
           transform: translateY(-100%);
+  -webkit-transition-duration: 400ms;
+          transition-duration: 400ms;
   -webkit-transition: "250ms cubic-bezier(0.4, 0, 0.2, 1)";
   transition: "250ms cubic-bezier(0.4, 0, 0.2, 1)";
 }
