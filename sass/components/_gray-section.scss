@@ -1,0 +1,4 @@
+.background-gray-section {
+    background: getColor("bcgnd-secondary");
+    @include flexVar(flex, center, none);
+}

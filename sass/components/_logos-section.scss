@@ -1,0 +1,4 @@
+.background-logos-section {
+    background-color: getColor("bcgnd-primary");
+  @include flexVar(flex, center, none);
+}

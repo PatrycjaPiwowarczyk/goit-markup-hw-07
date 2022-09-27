@@ -1,0 +1,4 @@
+.background-portfolio-main {
+    @include flexVar(flex, center, none);
+    background: getColor("bcgnd-primary");
+  }

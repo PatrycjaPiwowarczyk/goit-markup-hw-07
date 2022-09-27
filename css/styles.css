@@ -357,14 +357,12 @@ label .signup-form_email:focus {
 /* OVERLAY-SECTION */
 
 .h1-heading {
-  align: center;
   width: 696px;
   height: 120px;
   font-weight: 900;
   font-size: 44px;
   line-height: 116%;
   text-align: center;
-  vertical-align: top;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--just-white);

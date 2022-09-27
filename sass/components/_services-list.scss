@@ -1,0 +1,37 @@
+.services-list {
+  width: 1170px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 30px;
+  margin-top: 50px;
+
+  &_image {
+    width: 370px;
+    height: 294px;
+  }
+
+  &_box {
+    width: 370px;
+    height: 294px;
+    position: relative;
+  }
+
+  &_description {
+    @include flexVar(flex, center, center);
+  }
+
+  &_description p {
+    @include fontVar(normal, 700, 14px, 100%, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    color: getColor("text-on-darkparts");
+  }
+}
+
+.services-list_box > .services-list_description {
+  height: 70px;
+  width: 370px;
+  background: rgba(47, 48, 58, 0.8);
+  top: 224px;
+  position: absolute;
+}

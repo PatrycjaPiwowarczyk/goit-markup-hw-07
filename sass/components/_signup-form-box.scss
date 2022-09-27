@@ -27,6 +27,10 @@ label .signup-form_email:focus {
 .signup-form {
   margin-top: 20px;
 
+  &_email {
+    color: getColor("text-placeholder-on-dark");
+  }
+
   &_email::placeholder {
     @include fontVar(normal, 400, 16px, 125%, 0.03em);
     @include flexVar(flex, none, center);

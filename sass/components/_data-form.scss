@@ -1,0 +1,74 @@
+.form-heading {
+  width: 448px;
+  height: 23px;
+  @include fontVar(normal, 700, 20px, 100%, 0.03em);
+  text-align: center;
+  color: getColor("text-black");
+  margin-top: 40px;
+  margin-bottom: 12px;
+  white-space: nowrap;
+}
+
+.data-form-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 40px;
+  margin-right: 40px;
+  width: 528px;
+  height: 581px;
+}
+
+.data-form svg {
+  position: absolute;
+  border: none;
+
+  &:focus,
+  &:hover {
+    border: none;
+  }
+}
+
+.data-form_input {
+  border: none;
+  position: relative;
+  display: flex;
+  width: 448px;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 42px;
+}
+
+.data-form_input-box:focus-within .input-hovering,
+.data-form_input-box:hover .input-hovering {
+  fill: getColor("text-hover");
+  transition: transform $hovertransition;
+  transition-property: transform;
+}
+
+.input-hovering:focus-within,
+.input-hovering:hover {
+  outline: none;
+  border: 1px solid getColor("text-hover");
+  border-radius: 4px;
+  transition: transform $hovertransition;
+  transition-property: transform;
+}
+
+.username-svg {
+  top: 34px;
+  left: 15px;
+  fill: getColor("text-black");
+}
+
+.phone-number-svg {
+  top: 34px;
+  left: 14.27px;
+  fill: getColor("text-black");
+}
+
+.email-svg {
+  top: 34px;
+  left: 13.5px;
+  fill: getColor("text-black");
+}

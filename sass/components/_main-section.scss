@@ -1,0 +1,18 @@
+.background-main-section {
+    @include flexVar(flex, center, none);
+    background-color: getColor("bcgnd-primary");
+}
+
+.main-section {
+  padding-bottom: 0px;
+}
+
+.information-section {
+    flex-wrap: wrap;
+    column-gap: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// information-boxes
+// services-list
