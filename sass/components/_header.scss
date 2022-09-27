@@ -1,0 +1,31 @@
+.header_logo {
+    width: 145px;
+    height: 31px;
+    margin-top: 24px;
+    margin-bottom: 25px;
+}
+
+.background-header {
+    @include flexVar(flex, center, none);
+    background-color: getColor("bcgnd-primary");
+    border: 1px solid getColor("bcgnd-projectsbox");
+}
+
+.header_text {
+    @include flexVar(flex, space-between, center);
+    flex-direction: row;
+}
+  
+.header-leftside { 
+    @include flexVar(flex, none, center); 
+    flex-direction: row;
+}
+
+.header-rightside {  
+    display: flex;
+}
+  
+  
+ //  logo
+ //  navigation
+ //  contact-info 

@@ -1,0 +1,71 @@
+.signup-form-box {
+  display: flex;
+  flex-direction: column;
+  margin-left: 78px;
+  margin-top: 12px;
+}
+
+label .signup-form_email {
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  width: 358px;
+  border: 1px solid getColor("border-form-input-on-dark");
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+label .signup-form_email:hover,
+label .signup-form_email:focus {
+  border: 1px solid getColor("border-form-input-on-dark");
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.signup-form {
+  margin-top: 20px;
+
+  &_email::placeholder {
+    @include fontVar(normal, 400, 16px, 125%, 0.03em);
+    @include flexVar(flex, none, center);
+    color: getColor("text-placeholder-on-dark");
+  }
+
+  &_button {
+    width: 200px;
+    height: 50px;
+    background: getColor("text-hover");
+    border-color: getColor("text-hover");
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    margin-left: 12px;
+  }
+
+  &_buttontext {
+    @include fontVar(normal, 700, 16px, 188%, 0.06em);
+    margin-left: 42px;
+    white-space: nowrap;
+    color: getColor("text-on-darkparts");
+  }
+
+  &_button:hover,
+  &_button:focus {
+    box-shadow: inset 0px 0px 30px -10px rgba(38, 108, 121, 1);
+    transition: $hovertransition;
+  }
+}
+
+.signup-button-container {
+  @include flexVar(flex, none, center);
+}
+
+.signup-button-container svg {
+  margin-left: 24px;
+}
+
+.signup-icon {
+  display: flex;
+  fill: getColor("svg-fill-hover");
+}

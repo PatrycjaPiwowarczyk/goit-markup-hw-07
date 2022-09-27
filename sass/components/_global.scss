@@ -1,0 +1,38 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: getColor("bcgnd-secondary");
+  font-family: sans-serif;
+  font-family: getFont("font1"), getFont("font2");
+  @include fontVar(normal, 400, 14px, none, none);
+  color: getColor("text-primary");
+}
+
+.body-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container {
+  width: 1200px;
+}
+
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.list {
+  list-style-type: none;
+  display: flex;
+}
+
