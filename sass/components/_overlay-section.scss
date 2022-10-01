@@ -1,19 +1,9 @@
-.h1-heading {
-  width: 696px;
-  height: 120px;
-  @include fontVar(normal, 900, 44px, 116%, 0.06em);
-  text-align: center;
-  text-transform: uppercase;
-  color: getColor("text-on-darkparts");
-  margin-top: 106px;
+.overlay__container {
+  @extend .container;
+  @extend .section;
 }
 
-.overlay-section {
-  @include flexVar(flex, center, center);
-  flex-direction: column;
-}
-
-.background-overlay-image {
+.overlay {
   @include flexVar(flex, center, none);
   width: 1600px;
   height: 600px;
@@ -24,7 +14,22 @@
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/overlay.jpg");
 }
 
-.background-overlay-section {
+.h1-heading {
+  width: 696px;
+  height: 120px;
+  @include fontVar(normal, 900, 44px, 116%, 0.06em);
+  text-align: center;
+  text-transform: uppercase;
+  color: getColor("text-on-darkparts");
+  margin-top: 106px;
+}
+
+.overlay__section {
+  @include flexVar(flex, center, center);
+  flex-direction: column;
+}
+
+.overlay__background {
   @include flexVar(flex, center, none);
   background-color: getColor("bcgnd-dark");
 }

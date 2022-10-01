@@ -1,4 +1,8 @@
-.navigation_text {
+.navigation {
+  @extend .list;
+}
+
+.navigation__text {
   @include fontVar(normal, 500, 14px, 100%, 0.02em);
   text-decoration: none;
   color: getColor("text-primary");

@@ -1,11 +1,11 @@
-.logos-box {
+.logos-section__logo-boxes {
   list-style: none;
   @include flexVar(flex, center, center);
   gap: 30px;
   margin-top: 50px;
 }
 
-.logo-box {
+.logo-boxes__logo-box {
   @include flexVar(flex, center, none);
   place-items: center;
   width: 170px;

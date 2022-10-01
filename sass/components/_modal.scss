@@ -1,3 +1,33 @@
+.backdrop {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 500ms ease-in-out, visibility 1000ms ease-in-out;
+  visibility: visible;
+}
+
+.backdrop__container {
+  display: flex;
+  position: relative;
+  width: 528px;
+  height: 581px;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: getColor("bcgnd-primary");
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
 .button-box {
   position: relative;
 }
@@ -18,34 +48,4 @@
 .close-btn:hover,
 .close-btn:focus {
   background-color: #c3c7c94e;
-}
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.backdrop {
-  position: fixed;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  background-color: rgba(0, 0, 0, 0.2);
-  transition: opacity 500ms ease-in-out, visibility 1000ms ease-in-out;
-  visibility: visible;
-}
-
-.modal {
-  display: flex;
-  position: relative;
-  width: 528px;
-  height: 581px;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  background: getColor("bcgnd-primary");
-  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
 }

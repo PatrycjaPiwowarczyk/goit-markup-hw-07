@@ -1,31 +1,30 @@
-.contact-box{
-    @include fontVar(normal, 400, 14px, 171%, 0.03em);
+.contact-box {
+  @include fontVar(normal, 400, 14px, 171%, 0.03em);
 
-    &_phone {
-        margin-bottom: 60px;
-    }
+  &__phone {
+    margin-bottom: 60px;
+  }
 
-    &_mail,
-    &_phone {
-       text-decoration: none;
-       color: getColor("text-on-darkparts2");
-       display: flex;
-       margin-top: 9px; 
-    }
+  &__mail,
+  &__phone {
+    text-decoration: none;
+    color: getColor("text-on-darkparts2");
+    display: flex;
+    margin-top: 9px;
+  }
 
-    &_address{
-        color: getColor("text-on-darkparts");
-        display: flex;
-        margin-top: 9px;
-    }
+  &__address {
+    color: getColor("text-on-darkparts");
+    display: flex;
+    margin-top: 9px;
+  }
 
-    &_mail:hover,
-    &_mail:focus,
-    &_phone:hover,
-    &_phone:focus {
-        text-decoration: underline;
-        color: getColor("text-hover");
-        transition: $hovertransition;
-    }
+  &__mail:hover,
+  &__mail:focus,
+  &__phone:hover,
+  &__phone:focus {
+    text-decoration: underline;
+    color: getColor("text-hover");
+    transition: $hovertransition;
+  }
 }
-

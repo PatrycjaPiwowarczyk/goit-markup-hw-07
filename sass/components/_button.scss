@@ -14,7 +14,7 @@
     border-radius: 4px;
   }
 
-  &_text {
+  &__text {
     @include fontVar(normal, 700, 16px, 160%, 0.06em);
     color: getColor("text-on-darkparts");
     align: center;

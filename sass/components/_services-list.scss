@@ -1,34 +1,35 @@
-.services-list {
+.services-section__services-list {
   width: 1170px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 30px;
   margin-top: 50px;
-
-  &_image {
-    width: 370px;
-    height: 294px;
-  }
-
-  &_box {
-    width: 370px;
-    height: 294px;
-    position: relative;
-  }
-
-  &_description {
-    @include flexVar(flex, center, center);
-  }
-
-  &_description p {
-    @include fontVar(normal, 700, 14px, 100%, 0.03em);
-    text-align: center;
-    text-transform: uppercase;
-    color: getColor("text-on-darkparts");
-  }
+  @extend .list;
 }
 
-.services-list_box > .services-list_description {
+.services-list__image {
+  width: 370px;
+  height: 294px;
+}
+
+.services-list__box {
+  width: 370px;
+  height: 294px;
+  position: relative;
+}
+
+.services-list__description {
+  @include flexVar(flex, center, center);
+}
+
+.services-list__description p {
+  @include fontVar(normal, 700, 14px, 100%, 0.03em);
+  text-align: center;
+  text-transform: uppercase;
+  color: getColor("text-on-darkparts");
+}
+
+.services-list__box > .services-list__description {
   height: 70px;
   width: 370px;
   background: rgba(47, 48, 58, 0.8);

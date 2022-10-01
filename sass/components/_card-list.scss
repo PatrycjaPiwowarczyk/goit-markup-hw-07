@@ -1,28 +1,29 @@
-.card-list {
+.gray-section__card-list {
   width: 1170px;
   flex-wrap: wrap;
   gap: 30px;
   margin-left: auto;
   margin-right: auto;
   margin-top: 50px;
-
-  &_card {
-    width: 270px;
-    height: 428px;
-    background: getColor("bcgnd-primary");
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-    border-radius: 0px 0px 4px 4px;
-  }
+  @extend .list;
 }
 
-.card_photo-description {
+.card-list__card {
+  width: 270px;
+  height: 428px;
+  background: getColor("bcgnd-primary");
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.card__photo-description {
   @include fontVar(normal, 500, 16px, 100%, 0.03em);
   text-align: center;
   vertical-align: Top;
   margin-top: 30px;
 }
 
-.card_additional-photo-description {
+.card__additional-photo-description {
   @include fontVar(normal, 400, 16px, 100%, 0.03em);
   color: var(--light-gray);
   margin-top: 10px;

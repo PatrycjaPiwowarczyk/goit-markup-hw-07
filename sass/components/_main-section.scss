@@ -1,17 +1,25 @@
-.background-main-section {
-    @include flexVar(flex, center, none);
-    background-color: getColor("bcgnd-primary");
+.main-section__background {
+  @include flexVar(flex, center, none);
+  background-color: getColor("bcgnd-primary");
 }
 
-.main-section {
+.main-section__container {
   padding-bottom: 0px;
+  @extend .container;
+  @extend .section;
 }
 
-.information-section {
-    flex-wrap: wrap;
-    column-gap: 30px;
-    margin-left: auto;
-    margin-right: auto;
+.main-section__information-boxes {
+  flex-wrap: wrap;
+  column-gap: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  @extend .list;
+}
+
+.services-section__container {
+  @extend .container;
+  @extend .section;
 }
 
 // information-boxes

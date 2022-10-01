@@ -1,7 +1,7 @@
 .information-box {
     width: 270px;
 
-    &_icon {
+    &__icon {
         background-color: getColor("bcgnd-secondary");
         margin-bottom: 30px;
         width: 270px;
@@ -9,13 +9,13 @@
         @include flexVar(flex, center, center);
     }
 
-    &_heading {
+    &__heading {
         @include fontVar(normal, 700, 14px, 100%, 0.03em);
         text-transform: uppercase;
         margin-bottom: 10px;
     }
 
-    &_text {
+    &__text {
         @include fontVar(normal, 400, 14px, 146%, 0.03em);
         color: getColor("text-secondary");
         width: 270px;

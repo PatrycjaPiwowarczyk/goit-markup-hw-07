@@ -1,4 +1,8 @@
-.contact-info_text {
+.contact-info {
+  @extend .list;
+}
+
+.contact-info__text {
   text-decoration: none;
   @include fontVar(normal, 500, 14px, 100%, 0.02em);
   color: getColor("text-secondary");
@@ -14,11 +18,11 @@
   }
 }
 
-.contact-info_icons {
+.contact-info__icons {
   margin-right: 10px;
 }
 
 .contact-info:last-child a {
-    display: flex;
-    margin-left: 50px
+  display: flex;
+  margin-left: 50px;
 }

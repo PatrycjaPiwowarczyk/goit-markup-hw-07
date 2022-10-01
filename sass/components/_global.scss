@@ -14,7 +14,7 @@ body {
   color: getColor("text-primary");
 }
 
-.body-container {
+.body__container {
   width: 100%;
   height: 100%;
   display: flex;
@@ -41,7 +41,7 @@ body {
   width: 352px;
   height: 42px;
   @include fontVar(normal, 700, 36px, 100%, 0.03em);
-  text-align: center; 
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
 }
