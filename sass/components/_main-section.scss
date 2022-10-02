@@ -1,4 +1,4 @@
-.main-section__background {
+.main-section {
   @include flexVar(flex, center, none);
   background-color: getColor("bcgnd-primary");
 }

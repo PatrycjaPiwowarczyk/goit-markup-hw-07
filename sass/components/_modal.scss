@@ -11,7 +11,7 @@
 
 .backdrop__container {
   display: flex;
-  position: relative;
+  position: absolute;
   width: 528px;
   height: 581px;
   left: 50%;
@@ -28,11 +28,7 @@
   pointer-events: none;
 }
 
-.button-box {
-  position: relative;
-}
-
-.close-btn {
+.close-button__container {
   position: absolute;
   width: 30px;
   height: 30px;
@@ -43,9 +39,9 @@
   border-radius: 50%;
   cursor: pointer;
   pointer-events: visible;
-}
 
-.close-btn:hover,
-.close-btn:focus {
-  background-color: #c3c7c94e;
+  &:focus,
+  &:hover {
+    background-color: #c3c7c94e;
+  }
 }

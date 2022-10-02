@@ -1,4 +1,4 @@
-.gray-section__card-list {
+.card-list__container {
   width: 1170px;
   flex-wrap: wrap;
   gap: 30px;
@@ -16,33 +16,33 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.card__photo-description {
+.card-list__photo-description {
   @include fontVar(normal, 500, 16px, 100%, 0.03em);
   text-align: center;
   vertical-align: Top;
   margin-top: 30px;
 }
 
-.card__additional-photo-description {
+.card-list__additional-photo-description {
   @include fontVar(normal, 400, 16px, 100%, 0.03em);
   color: var(--light-gray);
   margin-top: 10px;
   @include flexVar(flex, center, none);
 }
 
-.social-icon {
+.social-icons {
+  @include flexVar(flex, center, center);
+  list-style: none;
+  margin-top: 16px;
+  gap: 10px;
+}
+
+.social-icons__icon {
   width: 44px;
   height: 44px;
   border-radius: 50%;
   background-color: getColor("bcgnd-primary");
   fill: getColor("svg-fill");
-
-  &-box {
-    @include flexVar(flex, center, center);
-    list-style: none;
-    margin-top: 16px;
-    gap: 10px;
-  }
 
   &:hover,
   &:focus {

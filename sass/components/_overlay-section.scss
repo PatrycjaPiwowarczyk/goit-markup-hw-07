@@ -1,9 +1,9 @@
-.overlay__container {
-  @extend .container;
-  @extend .section;
+.overlay {
+  @include flexVar(flex, center, none);
+  background-color: getColor("bcgnd-dark");
 }
 
-.overlay {
+.overlay__container {
   @include flexVar(flex, center, none);
   width: 1600px;
   height: 600px;
@@ -12,6 +12,8 @@
   background-position: center;
   background-repeat: no-repeat;
   background-image: linear-gradient(0deg, rgba(47, 48, 58, 0.4) 0%, rgba(47, 48, 58, 0.4) 100%), url("../images/overlay.jpg");
+  @extend .container;
+  @extend .section;
 }
 
 .h1-heading {
@@ -29,7 +31,4 @@
   flex-direction: column;
 }
 
-.overlay__background {
-  @include flexVar(flex, center, none);
-  background-color: getColor("bcgnd-dark");
-}
+

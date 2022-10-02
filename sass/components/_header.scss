@@ -1,4 +1,4 @@
-.header__background {
+.header {
   @include flexVar(flex, center, none);
   background-color: getColor("bcgnd-primary");
   border: 1px solid getColor("border-header");
@@ -7,6 +7,7 @@
 .header__container {
   @include flexVar(flex, space-between, center);
   flex-direction: row;
+  @extend .container;
 }
 
 .header__leftside {

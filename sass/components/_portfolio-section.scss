@@ -1,4 +1,12 @@
-.background-portfolio-main {
-    @include flexVar(flex, center, none);
-    background: getColor("bcgnd-primary");
-  }
+.portfolio {
+  @include flexVar(flex, center, none);
+  background: getColor("bcgnd-primary");
+}
+
+.portfolio__container {
+  @extend .container;
+}
+
+.portfolio__section {
+  @extend .section;
+}

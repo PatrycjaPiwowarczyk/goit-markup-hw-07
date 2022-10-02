@@ -13,26 +13,25 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
   </head>
-  <body>
+  <body class="body">
     <div class="body__container">
-      <div class="header__background">
-        <div class="container">
-          <header class="header">
-            <div class="header__container">
+        <div class="header">
+          <header class="header__container">
               <div class="header__leftside">
                 <a class="logo header__logo" href="./index.html"><span class="logo--blue">Web</span><span class="logo--gray">Studio</span></a>
-                <nav>
-                  <ul class="navigation">
+                <nav class="navigation">
+                  <ul class="navigation__container">
                     <li><a class="navigation__text" href="./index.html">Agencja</a></li>
                     <li>
-                      <a class="navigation__text" href="./portfolio.html"><span class="navigation_current-page">Portfolio</span></a>
+                      <a class="navigation__text" href="./portfolio.html"><span class="navigation__current-page">Portfolio</span></a>
                     </li>
                     <li class="navigation__text">Kontakt</li>
                   </ul>
                 </nav>
               </div>
               <div class="header__rightside">
-                <ul class="contact-info">
+                <div class="contact-info">
+                <ul class="contact-info__container">
                   <li>
                     <a class="contact-info__text" href="mailto:info@devstudio.com">
                       <svg class="contact-info__icons" width="16px" height="12px">
@@ -51,171 +50,155 @@
                   </li>
                 </ul>
               </div>
-            </div>
+              </div>
           </header>
-        </div>
       </div>
-      <div class="background-portfolio-main">
-        <div class="container">
-          <main class="portfolio-main section">
-            <div class="nav-buttons-box">
-              <button class="nav-buttons current-button" type="button"><span>Wszystkie</span></button>
-              <button class="nav-buttons" type="button"><span>Strony</span></button>
-              <button class="nav-buttons" type="button"><span>Aplikacje</span></button>
-              <button class="nav-buttons" type="button"><span>Dizajn</span></button>
-              <button class="nav-buttons" type="button"><span>Marketing</span></button>
+      <div class="portfolio">
+        <div class="portfolio__container">
+          <main class="portfolio__section">
+            <div class="nav-buttons">
+            <div class="nav-buttons__container">
+              <button class="nav-buttons__button nav-buttons__current-button" type="button"><span>Wszystkie</span></button>
+              <button class="nav-buttons__button" type="button"><span>Strony</span></button>
+              <button class="nav-buttons__button" type="button"><span>Aplikacje</span></button>
+              <button class="nav-buttons__button" type="button"><span>Dizajn</span></button>
+              <button class="nav-buttons__button" type="button"><span>Marketing</span></button>
             </div>
-            <ul class="projects-list">
-              <li>
-                <div class="projects-list__project-boxes">
-                  <div class="project-boxes__project-box">
+          </div>
+          <div class="projects-list">
+            <ul class="projects-list__container">
+              <li class="projects-list__project-box">
+                  <div class="projects-list__pic">
                     <img src="images/pic1.jpg" alt="Grafika prezentująca laptop z otwartą stroną internetową" width="370" height="294" />
-                    <div class="project-box__animation">
+                    <div class="projects-list__animation">
                       <p>Technocrack jest popularną platformą wykorzystywaną do rozpowszechniania koronawirusa. Firmy wykorzystują tę platformę do celów szpiegowskich i ataków na niezabezpieczone serwery konkurencji</p>
+                  </div>
                     </div>
-                  </div>
-                  <p class="project-box__description">Technocrack</p>
-                  <p class="project-box__additional-description">Strona internetowa</p>
-                </div>
+                  <p class="projects-list__description">Technocrack</p>
+                  <p class="projects-list__additional-description">Strona internetowa</p>
               </li>
-              <li>
-                <div class="projects-list__project-boxes">
-                  <div class="project-boxes__project-box">
+              <li class="projects-list__project-box">
+                  <div class="projects-list__pic">
                     <img src="images/pic2.jpg" alt="Grafika prezentująca dwójkę koszykarzy" width="370" height="294" />
-                    <div class="project-box__animation"></div>
+                    <div class="projects-list__animation"></div>
                   </div>
-                  <p class="project-box__description">Grafika New Orlean vs Golden Star</p>
-                  <p class="project-box__additional-description">Dizajn</p>
-                </div>
+                  <p class="projects-list__description">Grafika New Orlean vs Golden Star</p>
+                  <p class="projects-list__additional-description">Dizajn</p>
               </li>
-              <li>
-                <div class="projects-list__project-boxes">
-                  <div class="project-boxes__project-box">
+              <li class="projects-list__project-box">
+                <div class="projects-list__pic">
                     <img src="images/pic3.jpg" alt="Grafika prezentująca szyld restauracji" width="370" height="294" />
-                    <div class="project-box__animation"></div>
+                    <div class="projects-list__animation"></div>
                   </div>
-                  <p class="project-box__description">Restauracja Seafood</p>
-                  <p class="project-box__additional-description">Aplikacja</p>
-                </div>
+                  <p class="projects-list__description">Restauracja Seafood</p>
+                  <p class="projects-list__additional-description">Aplikacja</p>
               </li>
-              <li>
-                <div class="projects-list__project-boxes">
-                  <div class="project-boxes__project-box">
+              <li class="projects-list__project-box">
+                <div class="projects-list__pic">
                     <img src="images/pic4.jpg" alt="Grafika prezentująca słuchawki" width="370" height="294" />
-                    <div class="project-box__animation"></div>
+                    <div class="projects-list__animation"></div>
                   </div>
-                  <p class="project-box__description">Projekt Prime</p>
-                  <p class="project-box__additional-description">Marketing</p>
-                </div>
+                  <p class="projects-list__description">Projekt Prime</p>
+                  <p class="projects-list__additional-description">Marketing</p>
               </li>
-              <li>
-                <div class="projects-list__project-boxes">
-                  <div class="project-boxes__project-box">
+              <li class="projects-list__project-box">
+                <div class="projects-list__pic">
                     <img src="images/pic5.jpg" alt="Grafika prezentująca dwa pudełka z nadrukami" width="370" height="294" />
-                    <div class="project-box__animation"></div>
+                    <div class="projects-list__animation"></div>
                   </div>
-                  <p class="project-box__description">Projekt Boxes</p>
-                  <p class="project-box__additional-description">Dizajn</p>
-                </div>
+                  <p class="projects-list__description">Projekt Boxes</p>
+                  <p class="projects-list__additional-description">Dizajn</p>
               </li>
-              <li>
-                <div class="projects-list__project-boxes">
-                  <div class="project-boxes__project-box">
+                <li class="projects-list__project-box">
+                  <div class="projects-list__pic">
                     <img src="images/pic6.jpg" alt="Grafika prezentująca monitor z otwartą stroną internetową" width="370" height="294" />
-                    <div class="project-box__animation"></div>
+                    <div class="projects-list__animation"></div>
                   </div>
-                  <p class="project-box__description">Inspiration has no Borders</p>
-                  <p class="project-box__additional-description">Strona internetowa</p>
-                </div>
+                  <p class="projects-list__description">Inspiration has no Borders</p>
+                  <p class="projects-list__additional-description">Strona internetowa</p>
               </li>
-              <li>
-                <div class="projects-list__project-boxes">
-                  <div class="project-boxes__project-box">
+              <li class="projects-list__project-box">
+                <div class="projects-list__pic">
                     <img src="images/pic7.jpg" alt="Grafika prezentująca otwarte czasopismo" width="370" height="294" />
-                    <div class="project-box__animation"></div>
+                    <div class="projects-list__animation"></div>
                   </div>
-                  <p class="project-box__description">Magazyn Limited Edition</p>
-                  <p class="project-box__additional-description">Dizajn</p>
-                </div>
+                  <p class="projects-list__description">Magazyn Limited Edition</p>
+                  <p class="projects-list__additional-description">Dizajn</p>
               </li>
-              <li>
-                <div class="projects-list__project-boxes">
-                  <div class="project-boxes__project-box">
+              <li class="projects-list__project-box">
+                <div class="projects-list__pic">
                     <img src="images/pic8.jpg" alt="Grafika prezentująca metkę z logo" width="370" height="294" />
-                    <div class="project-box__animation"></div>
+                    <div class="projects-list__animation"></div>
                   </div>
-                  <p class="project-box__description">Projekt LAB</p>
-                  <p class="project-box__additional-description">Marketing</p>
-                </div>
+                  <p class="projects-list__description">Projekt LAB</p>
+                  <p class="projects-list__additional-description">Marketing</p>
               </li>
-              <li>
-                <div class="projects-list__project-boxes">
-                  <div class="project-boxes__project-box">
+              <li class="projects-list__project-box">
+                <div class="projects-list__pic">
                     <img src="images/pic9.jpg" alt="Grafika prezentująca dłonie wpisujące tekst na klawiaturze laptopa" width="370" height="294" />
-                    <div class="project-box__animation"></div>
+                    <div class="projects-list__animation"></div>
                   </div>
-                  <p class="project-box__description">Growing Business</p>
-                  <p class="project-box__additional-description">Aplikacja</p>
-                </div>
+                  <p class="projects-list__description">Growing Business</p>
+                  <p class="projects-list__additional-description">Aplikacja</p>
               </li>
             </ul>
+          </div>
           </main>
         </div>
       </div>
-      <div class="footer__background">
-        <div class="footer">
-          <footer>
-            <div class="footer__container">
-              <div>
-                <a class="logo" href="./index.html"><span class="logo--blue">Web</span><span class="logo--white">Studio</span></a>
-                <br />
-                <address class="contact-box">
-                  <p class="contact-box__address">m. Warszawa, Aleje Jerozolimskie 21</p>
-                  <a class="contact-box__mail" href="mailto:info@example.com">info@example.com</a>
-                  <a class="contact-box__phone" href="tel:+48111111111">+48 111 111 111</a>
-                </address>
-              </div>
-              <div class="social-box">
-                <a class="text-heading">dołącz do nas</a>
-                <div class="social-box__icons">
-                  <a>
-                    <svg class="social-box__icon" width="44px" height="44px">
-                      <use width="20px" height="20px" x="12" y="12" href="images/icons.svg/sprite.svg#icon-instagram"></use>
-                    </svg>
-                  </a>
-                  <a>
-                    <svg class="social-box__icon" width="44px" height="44px">
-                      <use width="20px" height="20px" x="12" y="12" href="images/icons.svg/sprite.svg#icon-twitter"></use>
-                    </svg>
-                  </a>
-                  <a>
-                    <svg class="social-box__icon" width="44px" height="44px">
-                      <use width="20px" height="20px" x="12" y="12" href="images/icons.svg/sprite.svg#icon-facebook"></use>
-                    </svg>
-                  </a>
-                  <a>
-                    <svg class="social-box__icon" width="44px" height="44px">
-                      <use width="20px" height="20px" x="12" y="12" href="images/icons.svg/sprite.svg#icon-linkedin"></use>
-                    </svg>
-                  </a>
-                </div>
-              </div>
-              <div class="signup-form-box">
-                <a class="text-heading">zapisz się do newslettera</a>
-                <form name="signup-form" autocomplete="on" novalidate class="signup-form">
-                  <label class="signup-form__email"><input type="email" name="email" placeholder="E-mail" class="signup-form__email" /></label>
-                  <button type="submit" class="signup-form__signup-button">
-                    <div class="signup-button__container">
-                      <a class="signup-button__buttontext">Zapisz się</a>
-                      <svg width="24" height="24">
-                        <use class="signup-icon" width="24" height="24" href="images/icons.svg/sprite.svg#icon-signup"></use>
-                      </svg>
-                    </div>
-                  </button>
-                </form>
+      <div class="footer">
+        <footer class="footer__container">
+          <div class="footer__contact">
+              <a class="logo" href="./index.html"><span class="logo--blue">Web</span><span class="logo--white">Studio</span></a>
+              <br/>
+              <div class="contact-box">
+              <address class="contact-box__container">
+                <p class="contact-box__address">m. Warszawa, Aleje Jerozolimskie 21</p>
+                <a class="contact-box__mail" href="mailto:info@example.com">info@example.com</a>
+                <a class="contact-box__phone" href="tel:+48111111111">+48 111 111 111</a>
+              </address>
+            </div>
+            </div>
+            <div class="social-box">
+              <a class="text-heading">dołącz do nas</a>
+              <div class="social-box__container">
+                <a>
+                  <svg class="social-box__icon" width="44px" height="44px">
+                    <use width="20px" height="20px" x="12" y="12" href="images/icons.svg/sprite.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+                <a>
+                  <svg class="social-box__icon" width="44px" height="44px">
+                    <use width="20px" height="20px" x="12" y="12" href="images/icons.svg/sprite.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+                <a>
+                  <svg class="social-box__icon" width="44px" height="44px">
+                    <use width="20px" height="20px" x="12" y="12" href="images/icons.svg/sprite.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+                <a>
+                  <svg class="social-box__icon" width="44px" height="44px">
+                    <use width="20px" height="20px" x="12" y="12" href="images/icons.svg/sprite.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
               </div>
             </div>
-          </footer>
+            <div class="signup-form">
+              <a class="text-heading">zapisz się do newslettera</a>
+              <form class="signup-form__container" name="signup-form" autocomplete="on" novalidate>
+                <label class="signup-form__email"><input type="email" name="email" placeholder="E-mail" class="signup-form__email"/></label>
+                <button type="submit" class="signup-button">
+                  <div class="signup-button__container">
+                    <a class="signup-button__buttontext">Zapisz się</a>
+                    <svg width="24" height="24"> 
+                      <use class="signup-button__icon" width="24" height="24" href="images/icons.svg/sprite.svg#icon-signup">
+                      </use></svg>
+                    </div>
+                </button>
+              </form>
+            </div>
+        </footer>
         </div>
       </div>
     </div>

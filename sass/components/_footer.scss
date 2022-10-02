@@ -1,14 +1,14 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  background: getColor("bcgnd-dark");
+}
+
 .footer__container {
   padding-top: 60px;
   display: flex;
   flex-direction: row;
   @extend .container;
-}
-
-.footer__background {
-  display: flex;
-  justify-content: center;
-  background: getColor("bcgnd-dark");
 }
 
 .text-heading {

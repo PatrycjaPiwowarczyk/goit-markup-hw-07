@@ -1,4 +1,4 @@
-.projects-list {
+.projects-list__container {
   width: 1170px;
   margin-left: auto;
   margin-right: auto;
@@ -10,7 +10,7 @@
   @extend .list;
 }
 
-.projects-list__project-boxes {
+.projects-list__project-box {
   box-sizing: border-box;
   width: 370px;
   background: getColor("bcgnd-primary");
@@ -24,19 +24,19 @@
   }
 }
 
-.project-boxes__project-box {
+.projects-list__pic {
   overflow: hidden;
   position: relative;
 }
 
-.project-box__description {
+.projects-list__description {
   @include fontVar(normal, 700, 18px, 200%, 0.06em);
   color: getColor("text-primary");
   margin-top: 20px;
   margin-left: 24px;
 }
 
-.project-box__additional-description {
+.projects-list__additional-description {
   @include fontVar(normal, 400, 16px, 188%, 0.03em);
   color: getColor("text-secondary");
   margin-top: 4px;
@@ -44,7 +44,7 @@
   margin-left: 24px;
 }
 
-.project-box__animation {
+.projects-list__animation {
   background: rgba(33, 150, 243, 0.9);
   position: absolute;
   left: inherit;
@@ -55,7 +55,7 @@
   @include flexVar(flex, none, center);
 }
 
-.project-box__animation p {
+.projects-list__animation p {
   @include fontVar(normal, 400, 18px, 156%, 0.03em);
   color: getColor("text-on-darkparts");
   width: 301px;
@@ -63,8 +63,8 @@
   margin-left: 24px;
 }
 
-.project-boxes__project-box:focus .project-box__animation,
-.project-boxes__project-box:hover .project-box__animation {
+.projects-list__pic:focus .projects-list__animation,
+.projects-list__pic:hover .projects-list__animation {
   transform: translateY(-100%);
   transition-duration: 400ms;
   transition: $hovertransition;

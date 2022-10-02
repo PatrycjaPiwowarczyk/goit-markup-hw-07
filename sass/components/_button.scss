@@ -1,4 +1,4 @@
-.button {
+.button__container {
   width: 200px;
   height: 50px;
   border-radius: 4px;
@@ -13,10 +13,10 @@
     transition: $hovertransition;
     border-radius: 4px;
   }
+}
 
-  &__text {
-    @include fontVar(normal, 700, 16px, 160%, 0.06em);
-    color: getColor("text-on-darkparts");
-    align: center;
-  }
+.button__text {
+  @include fontVar(normal, 700, 16px, 160%, 0.06em);
+  color: getColor("text-on-darkparts");
+  align: center;
 }

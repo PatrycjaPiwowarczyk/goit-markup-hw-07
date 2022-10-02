@@ -1,4 +1,7 @@
 .navigation {
+}
+
+.navigation__container {
   @extend .list;
 }
 
@@ -16,11 +19,11 @@
   }
 }
 
-.navigation:first-child {
+.navigation__container:first-child {
   margin-left: 93px;
 }
 
-.navigation_current-page {
+.navigation__current-page {
   color: getColor("text-hover");
   position: relative;
 

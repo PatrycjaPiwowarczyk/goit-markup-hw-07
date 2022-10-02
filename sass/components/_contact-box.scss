@@ -1,3 +1,7 @@
+.contact-box__container {
+  font-style: normal;
+}
+
 .contact-box {
   @include fontVar(normal, 400, 14px, 171%, 0.03em);
 
@@ -8,6 +12,7 @@
   &__mail,
   &__phone {
     text-decoration: none;
+    text-transform: none;
     color: getColor("text-on-darkparts2");
     display: flex;
     margin-top: 9px;
